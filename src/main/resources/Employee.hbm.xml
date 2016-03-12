@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.mkyong.model">
+
+<class name="Employees" table="EMPLOYEES">
+<meta attribute="class-description">
+This class contains the employee details.
+</meta>
+<id name ="employee_id" type="int" column="EMPLOYEE_ID">
+<generator class="native"/>
+</id>
+ <property name="first_name"  column="FIRST_NAME" type="string"/>
+ <property name="last_name"  column="LAST_NAME" type="string"/>
+ <property name="Email"  column="EMAIL" type="string"/>       
+ <property name="phone_number"  column="PHONE_NUMBER" type="string"/>      
+ <property name="Hire_Date"  column="HIRE_DATE" type="date"/>
+<property name="job_id"  column="JOB_ID" type="string"/>
+<property name="salary"  column="SALARY" type="int"/>
+<property name="commission_pct"  column="COMMISSION_PCT" type="int"/>
+<property name="manager_id"  column="MANAGER_ID" type="int"/>
+<property name="department_id"  column="DEPARTMENT_ID" type="int"/>
+</class>
+</hibernate-mapping>
